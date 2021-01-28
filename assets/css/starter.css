@@ -1,0 +1,18 @@
+.max-img {
+  max-width: 100%;
+}
+
+.hr {
+  height: 2px;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  padding-top: 48px;
+}
+/*# sourceMappingURL=starter.css.map */

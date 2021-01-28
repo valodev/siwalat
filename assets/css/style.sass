@@ -1,0 +1,62 @@
+.banner
+  min-height: 600px
+  height: 100vh
+  overflow: hidden
+  background-image: url('../img/banner/bg.svg')
+  background-size: cover
+  background-repeat: no-repeat
+  .waktu-menjelang
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 7
+    position: absolute
+    width: 100%
+    header
+      text-shadow: 0px 4px 10px rgba(0,0,0,.5)
+  .parallax-wrapper
+    height: 100%
+    // max-width: 1366px
+    // width: 100%
+    margin: 0 auto
+    position: relative
+    #layer-1, #layer-2, #layer-3, #layer-4, #layer-5
+      bottom: -300px
+      position: absolute
+      height: 100%
+      width: 100%
+      background-repeat: no-repeat
+      background-size: contain
+      @media ( max-width: 768px )
+        bottom: 0px 
+    #mosq
+      position: absolute
+      height: 100%
+      background-size: contain
+      width: 100%
+      background-repeat: no-repeat
+      background-image: url('../img/banner/mosque.svg')
+      background-position: bottom center
+      transform: scale(1.005)
+      z-index: 6
+    #layer-5
+      background-image: url('../img/banner/5.svg')
+      background-position: bottom center
+      z-index: 5
+    #layer-4
+      background-image: url('../img/banner/4.svg')
+      background-position: bottom left
+      z-index: 4
+    #layer-3
+      background-image: url('../img/banner/3.svg')
+      background-position: bottom left
+      z-index: 3
+    #layer-2
+      background-image: url('../img/banner/2.svg')
+      background-position: bottom right
+      z-index: 2
+    #layer-1
+      background-image: url('../img/banner/1.svg')
+      background-position: bottom center
+      z-index: 1
