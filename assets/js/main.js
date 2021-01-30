@@ -43,6 +43,7 @@ getIP.onreadystatechange = function() {
               index++;
             }
             document.getElementById('lokasi').innerHTML = jadwal.location.city;
+            console.log(jadwalSholat)
           }
         }
         getJadwal.open("GET", `https://api.pray.zone/v2/times/day.json?city=${loc}&date=2021-01-29`, true);
@@ -53,5 +54,15 @@ getIP.onreadystatechange = function() {
     getLoc.send();
   }
 };
-getIP.open("GET", "https://ipapi.co/json/", true);
+getIP.open("GET", "https://api.ipify.org?format=json&callback=?", true);
 getIP.send();
+
+
+window.onscroll = () => {
+  wScroll = window.scrollY;
+  document.getElementById('layer-1').setAttribute('style', `transform: translate(0, -${wScroll/8}px)`);
+  document.getElementById('layer-2').setAttribute('style', `transform: translate(0, -${wScroll/6}px)`);
+  document.getElementById('layer-3').setAttribute('style', `transform: translate(0, -${wScroll/4}px)`);
+  document.getElementById('layer-4').setAttribute('style', `transform: translate(0, -${wScroll/3}px)`);
+  document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/1.5}px)`);
+};
