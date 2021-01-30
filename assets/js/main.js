@@ -78,6 +78,13 @@ window.onscroll = () => {
     document.getElementById('layer-4').setAttribute('style', `transform: translate(0, -${wScroll/10}px)`);
     document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/50}px)`);
   }
+  if (wScroll > 50) {
+    document.querySelector('.navbar').setAttribute('style', 'background: #FFFFFF !important;')
+    $('.nav-link, .navbar-brand').addClass('text-dark');
+  } else {
+    $('.nav-link, .navbar-brand').removeClass('text-dark');
+    document.querySelector('.navbar').setAttribute('style', 'background: transparent !important;')
+  }
 };
 
 setInterval(() => {
