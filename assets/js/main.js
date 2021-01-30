@@ -60,9 +60,17 @@ getIP.send();
 
 window.onscroll = () => {
   wScroll = window.scrollY;
-  document.getElementById('layer-1').setAttribute('style', `transform: translate(0, -${wScroll/8}px)`);
-  document.getElementById('layer-2').setAttribute('style', `transform: translate(0, -${wScroll/6}px)`);
-  document.getElementById('layer-3').setAttribute('style', `transform: translate(0, -${wScroll/4}px)`);
-  document.getElementById('layer-4').setAttribute('style', `transform: translate(0, -${wScroll/3}px)`);
-  document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/1.5}px)`);
+  if (window.innerWidth > 768) {
+    document.getElementById('layer-1').setAttribute('style', `transform: translate(0, -${wScroll/8}px)`);
+    document.getElementById('layer-2').setAttribute('style', `transform: translate(0, -${wScroll/7}px)`);
+    document.getElementById('layer-3').setAttribute('style', `transform: translate(0, -${wScroll/6}px)`);
+    document.getElementById('layer-4').setAttribute('style', `transform: translate(0, -${wScroll/6}px)`);
+    document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/2}px)`);
+  } else {
+    document.getElementById('layer-1').setAttribute('style', `transform: translate(0, -${wScroll/25}px)`);
+    document.getElementById('layer-2').setAttribute('style', `transform: translate(0, -${wScroll/20}px)`);
+    document.getElementById('layer-3').setAttribute('style', `transform: translate(0, -${wScroll/15}px)`);
+    document.getElementById('layer-4').setAttribute('style', `transform: translate(0, -${wScroll/10}px)`);
+    document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/50}px)`);
+  }
 };
