@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-  padding: 32px 0;
+  padding: 32px 1rem;
   -webkit-transition: .2s;
   transition: .2s;
 }

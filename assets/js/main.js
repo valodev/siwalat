@@ -79,10 +79,10 @@ window.onscroll = () => {
     document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/50}px)`);
   }
   if (wScroll > 50) {
-    document.querySelector('.navbar').setAttribute('style', 'background: #FFFFFF !important;')
-    $('.nav-link, .navbar-brand').addClass('text-dark');
+    document.querySelector('.navbar').setAttribute('style', 'background: #010A1D !important; padding: 16px 1rem')
+    $('.nav-link, .navbar-brand').addClass('text-white');
   } else {
-    $('.nav-link, .navbar-brand').removeClass('text-dark');
+    $('.nav-link, .navbar-brand').addClass('text-white');
     document.querySelector('.navbar').setAttribute('style', 'background: transparent !important;')
   }
 };
