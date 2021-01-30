@@ -16,7 +16,7 @@ getIP.onreadystatechange = function() {
             var menitSekarang = ("0"+today.getMinutes()).slice(-2)
             var waktuSekarang = `${jamSekarang}:${menitSekarang}`;
             var index = 0;
-            var except = ['Sunrise', 'Imsak'];
+            var except = ['Sunrise', 'Imsak','Sunset'];
             for (const key in jadwalSholat) {
               if (Object.hasOwnProperty.call(jadwalSholat, key)) {
                 if (!(except.includes(Object.keys(jadwalSholat)[index]))) {
@@ -31,6 +31,11 @@ getIP.onreadystatechange = function() {
                       document.getElementById('menjelangJadwal').innerHTML = Object.keys(jadwalSholat)[index];
                       document.getElementById('waktuShalat').innerHTML = jadwalSholat[key];
                       break
+                    } else {
+                      document.getElementById('menjelangText').innerHTML = 'Menjelang waktu';
+                      document.getElementById('menjelangJadwal').innerHTML = Object.keys(jadwalSholat)[index];
+                      document.getElementById('waktuShalat').innerHTML = jadwalSholat[key];
+                      break   
                     }
                   } else if (jamSekarang < jadwalSholat[key].split(':')[0]) {
                     document.getElementById('menjelangText').innerHTML = 'Menjelang waktu';
@@ -46,7 +51,7 @@ getIP.onreadystatechange = function() {
             console.log(jadwalSholat)
           }
         }
-        getJadwal.open("GET", `https://api.pray.zone/v2/times/day.json?city=${loc}&date=2021-01-29`, true);
+        getJadwal.open("GET", `https://api.pray.zone/v2/times/day.json?city=${loc}&date=${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}`, true);
         getJadwal.send();    
       }
     };
