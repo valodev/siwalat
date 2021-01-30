@@ -79,3 +79,8 @@ window.onscroll = () => {
     document.getElementById('layer-5').setAttribute('style', `transform: translate(0, -${wScroll/50}px)`);
   }
 };
+
+setInterval(() => {
+  var today = new Date()
+  document.getElementById('banner').style.backgroundPosition = `0% ${today.getHours() / 24 * 100}%`;
+}, 0);

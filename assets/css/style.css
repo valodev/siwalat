@@ -1,3 +1,11 @@
+.bold {
+  font-weight: 700;
+}
+
+.dm-serif {
+  font-family: 'DM Serif Display', serif;
+}
+
 .banner {
   min-height: 600px;
   height: 100vh;
@@ -89,5 +97,19 @@
   background-image: url("../img/banner/1.svg");
   background-position: bottom center;
   z-index: 1;
+}
+
+.footer {
+  background: #010A1D;
+  margin-top: -5px;
+}
+
+.footer .wrapper {
+  padding: 128px 0px;
+}
+
+.footer .copyright {
+  background-color: #00071A;
+  padding: 16px 0;
 }
 /*# sourceMappingURL=style.css.map */
