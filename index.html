@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Siwalet - Sistem Jadwal Shalat</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/78158715?s=200&v=4" sizes="192x192">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/starter.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/section.css">
 </head>
+
 <body>
-<!-- Start Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Siwalat</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Video</a>
-        <a class="nav-link" href="#">Tentang</a>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Siwalat</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">Video</a>
+          <a class="nav-link" href="#">Tentang</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!-- End Navbar -->
+  </nav>
+  <!-- End Navbar -->
 
-<!-- Start Banner -->
-<section class="banner">
-  <div class="parallax-wrapper">
-    <div class="waktu-menjelang">
-      <header class="text-center text-white p-3">
-        <p class="mb-0" id="menjelangText"></p>
-        <h1 id="menjelangJadwal" style="font-size: 72px; font-weight: bold;"></h1>
-        <hr class="hr" width="50">
-        <h3 id="waktuShalat"></h3>
-        <p>Untuk wilayah <span id="lokasi"></span></p>
-      </header>
+  <!-- Start Banner -->
+  <section class="banner">
+    <div class="parallax-wrapper">
+      <div class="waktu-menjelang">
+        <header class="text-center text-white p-3">
+          <p class="mb-0" id="menjelangText"></p>
+          <h1 id="menjelangJadwal" style="font-size: 72px; font-weight: bold;"></h1>
+          <hr class="hr" width="50">
+          <h3 id="waktuShalat"></h3>
+          <p>Untuk wilayah <span id="lokasi"></span></p>
+        </header>
+      </div>
+      <div id="mosq" data-aos="fade-up"></div>
+      <div id="layer-1"></div>
+      <div id="layer-2"></div>
+      <div id="layer-3"></div>
+      <div id="layer-4"></div>
+      <div id="layer-5"></div>
     </div>
+<<<<<<< HEAD
     <div id="mosq" data-aos="fade-up"></div>
     <div id="layer-1"></div>
     <div id="layer-2"></div>
@@ -53,15 +69,62 @@
 <!-- End Banner -->
 
 <!-- Start Section 1 -->
+=======
+  </section>
+  <!-- End Banner -->
+
+  <!-- Start Section 1 -->
+  <section class="section1">
+    <div class="container">
+      <h2 style="color:white; font-weight: bold;">
+        Vide Dakwah Pilihan
+      </h2>
+      <p class="p1" style="color: white;">
+        Video dakwah pilihan yang dibawakan oleh ustadz ternama di Indonesia dibawakan dengan damai dan penuh rasa
+        islami menjadikan video dakwah Siwalat bisa memberikan ketenangan hati yang menonton, Jazakallahu Khairan.
+      </p>
+      <div class="row ml-0">
+        <div class="col-md-3 col-6 pl-0 mb-3">
+          <img src="/assets/img/section1/uah.jpg" class="img-fluid img1">
+          <p class="p2 mb-0 mt-2" style="color: white;">Ustadz Adi Hidayat</p>
+          <h5 style="color: white">
+            Kajian Virtual - Bangkit dari Masa Sulit
+          </h5>
+        </div>
+        <div class="col-md-3 col-6 pl-0 mb-3">
+          <img src="/assets/img/section1/uas.jpg" class="img-fluid img1">
+          <p class="p2 mb-0 mt-2" style="color: white;">Ustadz Abdul Somad</p>
+          <h5 style="color: white">
+            Ceramah UAS Full, Ilmu Dapat Stress Hilang
+          </h5>
+        </div>
+        <div class="col-md-3 col-6 pl-0 mb-3">
+          <img src="/assets/img/section1/uha.jpg" class="img-fluid img1">
+          <p class="p1 mb-0 mt-2" style="color: white;">Ustadz Hanan Ataki</p>
+          <h5 style="color: white">
+            Ceramah Ustd. Hanan Ataki - Diam
+          </h5>
+        </div>
+        <div class="col-md-3 col-6 pl-0 mb-3">
+          <img src="/assets/img/section1/ukb.jpg" class="img-fluid img1">
+          <p class="p1 mb-0 mt-2" style="color: white;">Ustadz Khalid Basalamah</p>
+          <h5 style="color: white">
+            Peringatan Malaikat Maut
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+>>>>>>> master
   <!-- 
     Play Area Ridho 
     -
     Mau pakai styling css? buat file css baru di folder assets/css
   -->
 
-<!-- End Section 1 -->
+  <!-- End Section 1 -->
 
-<!-- Start Section 2 -->
+  <!-- Start Section 2 -->
 
   <!-- 
     Play Area Alfi
@@ -69,13 +132,16 @@
     Mau pakai styling css? buat file css baru di folder assets/css
   -->
 
-<!-- End Section 3 -->
+  <!-- End Section 3 -->
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/assets/js/main.js"></script>
 <script>
   AOS.init();
 </script>
+
 </html>
